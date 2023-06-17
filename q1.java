@@ -1,14 +1,7 @@
-
-/**
- * Write a description of class q1 here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class q1
 {
     public static void main(String[] args) {
-        int num = 730;
+        int num = 82;
 
         System.out.println(sumPower3(num, 0, 0));
     }
@@ -24,9 +17,8 @@ public class q1
         }
 
         boolean step1 = sumPower3(num, sum, p+1);
-        boolean step2 = sumPower3(num, sum, p+2);
-        boolean step3 = sumPower3(num, sum, p);
+        boolean step2 = sumPower3(num, sum, p);
         
-        return (step1 || step2|| step3);
+        return (step1 || step2);
     }
 }
